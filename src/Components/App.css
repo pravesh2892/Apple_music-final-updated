@@ -1,0 +1,336 @@
+.app-container {
+  display: flex;
+}
+
+.main-content {
+  flex: 1; /* This makes the main content area grow and take up available space */
+  /* padding: 16px;  */
+  overflow-y: auto; /* Add scroll if content overflows */
+}
+
+.active {
+  position: relative;
+  border-radius: 5px;
+  height: 32px;
+  width: 172px;
+  color: rgba(0,0,0,.88);;
+  border: 1px solid rgba(60,60,67,.1); 
+  background-color: rgba(60,60,67,.1);
+  text-decoration: none;
+}
+
+
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+.App {
+  height: 100vh;
+  width: 100vw;
+}
+
+
+
+.sidebarparent {
+  background-color: rgba(216, 216, 223, 0.03);
+  width: 260px;
+  height: 100vh;
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.sidebardetails svg {
+  fill: #d60017;
+}
+
+.sidebarcontainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: fixed;
+  left: 28px;
+  z-index: 1000;
+}
+
+.sidebarlogo {
+  margin-top: 18px;
+}
+
+.sidebarinput,
+.sidebardetails {
+  margin-top: 22px;
+}
+
+.sidebarinput input {
+  background-color: white;
+  border-color: rgba(37, 36, 36, 0.15);
+  border-radius: 4px;
+  outline: none;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 12px;
+  font-weight: 400;
+  height: 32px;
+  letter-spacing: 0;
+  line-height: 1.25;
+  padding-bottom: 5px;
+  padding-top: 6px;
+  width: 200px;
+  padding-left: 30px;
+  color: #000;
+}
+
+.sidebarinput {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.sidebarinput svg {
+  fill: rgba(0, 0, 0, 0.65);
+  bottom: 0;
+  margin: auto 0;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  left: 10px;
+}
+
+.sidebardetails {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar-btn{
+  text-decoration: none;
+  color: rgba(0,0,0,.88);;
+}
+
+.details p {
+  font-size: 15px;
+}
+
+.navbarcontainer {
+  position: absolute;
+  top: 0;
+  left: 260px;
+  height: 55px;
+  width: calc(100% - 260px);
+  border-bottom: 1px solid #e6dada;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbarthreedivs {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 28% 42% 30%;
+  align-items: center;
+}
+
+.navbarthreedivs .playstopicons {
+  text-align: center;
+}
+
+.navbarthreedivs .playstopicons button {
+  border: none;
+  color: rgba(0, 0, 0, 0.56);
+  background-color: white;
+}
+
+.navbarthreedivs .playstopicons button svg {
+  color: rgba(0, 0, 0, 0.56);
+}
+
+.playstopicons .prevbtn {
+  transform: rotate(-180deg);
+  margin: 0 !important;
+  text-align: center;
+  padding: 0 !important;
+  margin-top: -20px !important;
+}
+
+.songnamediv {
+  display: flex;
+  height: 45px;
+  width: 100%;
+  border: 1px solid rgba(180, 177, 177, 0.15);
+}
+
+.songnamediv button {
+  border: none;
+  height: 100%;
+  width: 40px;
+}
+
+.songnamediv .songicon {
+  border-right: 1px solid rgba(0, 0, 0, 0.15);
+  
+}
+
+.songnamediv .songicon svg {
+  opacity: 0.2;
+  
+}
+
+.songnamediv .appleicon {
+  margin: auto;
+  /* opacity: 0.2; */
+}
+
+.songnamediv .appleicon svg {
+  opacity: 0.6;
+}
+
+.songnamediv .appleicon button {
+  background-color: white;
+}
+
+
+.navbarcontainer .volumesigndiv {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  text-align: center;
+}
+
+.navbarcontainer .signdiv {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+}
+
+.volumediv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+.volumediv svg {
+  opacity: 0.5;
+}
+
+.volumediv input {
+  opacity: 0.7;
+  height: 3px;
+}
+
+.signdiv button {
+  background-color: #d60017;
+  color: white;
+  outline: none;
+  border: none;
+  align-items: center;
+  border-radius: 6px;
+  font-size: 13px;
+  height: 28px;
+  justify-content: center;
+  letter-spacing: 0;
+  line-height: 1.23077;
+  min-width: 64px;
+  width: 85px;
+  padding: 0 15px 0 10px;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.signdiv button svg {
+  margin-right: 6px;
+  fill: white;
+  cursor: pointer;
+}
+
+.song-list-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(247, 244, 244, 0.9); 
+  z-index: 100; 
+  overflow: auto; 
+}
+
+.song-list {
+  max-width: 200px; 
+  margin: 20px auto; 
+}
+
+.song-list ul {
+  list-style: none;
+  padding: 0;
+  left: 5px;
+}
+
+.song-list li {
+  padding: 8px;
+  border-bottom: 1px solid #ccc; 
+}
+@media  screen and (max-width: 768px) {
+
+  .navbarcontainer {
+    position: absolute;
+    top: 0;
+    left: 260px;
+    height: 55px;
+    width: calc(100% - 260px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: none;
+    border: none;
+}
+
+.volumesigndiv{
+  float: right;
+  text-align: right;
+}
+  .sidebarparent {
+    width: 100%; 
+  }
+
+  .sidebarmaindiv {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .sidebarcontainer {
+    align-items: stretch; /* Adjust alignment for smaller screens */
+  }
+
+  .sidebarlogo {
+    margin-bottom: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .sidebarinput {
+    margin-bottom: 10px; /* Adjust margin for smaller screens */
+  }
+
+  .song-list-overlay {
+    top: auto;
+    bottom: 100%;
+  }
+
+  .sidebar-btn {
+    padding: 8px; /* Adjust padding for smaller screens */
+  }
+}

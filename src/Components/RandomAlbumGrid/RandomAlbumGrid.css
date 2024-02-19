@@ -1,0 +1,20 @@
+.random-album-grid {
+  margin-top: 53px;
+  background-color: #1d1c1c;
+}
+
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.album-card2 {
+  width: 220px;
+  height: 300px;
+}
+
+.album-image2 {
+  width: 200px;
+  height: 200px;
+}

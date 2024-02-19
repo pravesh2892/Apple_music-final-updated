@@ -1,0 +1,231 @@
+.text-truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%; 
+}
+
+.album-card {
+  padding: auto;
+  width: 100%;
+}
+
+.custom-card {
+  box-shadow: none; 
+  border: none; 
+}
+
+.album-card:active {
+  background-color: rgb(255,0,0); 
+}
+
+.screen-container{
+margin-top: 53px;
+padding: 20px;
+/* background-color: #1d1c1c; */
+}
+
+.album-image:hover {
+  filter: brightness(80%); /* Adjust the brightness value as needed */
+  transition: filter 0.3s; /* Add a smooth transition for the effect */
+}
+
+/* Add this to your CSS */
+.image-container {
+  position: relative;
+}
+
+
+.play-pause-button {
+  /* display: none; */
+  position: absolute;
+  bottom: 10px; /* Adjust the vertical position */
+  right: 10px; /* Adjust the horizontal position */
+  background-color: rgba(255, 255, 255, 0.8); /* Background color for the button */
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.play-pause-button.visible {
+  display: inline-block; /* Show the play/pause button when "visible" class is applied */
+}
+
+.play-pause-button:hover {
+  background-color: rgb(218, 49, 49); /* Adjust opacity for hover state */
+}
+
+.album-image.hover-effect:hover + .play-pause-button.hover-visible {
+  display: inline-block; /* Show the play/pause button on hover */
+}
+
+/* Styles for the album title */
+.album-title {
+color: black; 
+overflow-x: hidden;
+}
+.album-title-custom {
+  font-size: 20px; /* Updated font size */
+}
+
+.album-title.scrolling {
+animation: scrollText 5s linear infinite; 
+}
+
+.album-card {
+  margin-right: 5px; 
+  font-size: small;
+}
+
+.section-heading {
+  cursor: pointer;
+}
+
+.album-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 1em;
+  scrollbar-width: none;
+}
+
+.album-container::-webkit-scrollbar {
+  display: none; 
+}
+
+.album {
+  flex: 0 0 auto;
+  margin: 1em;
+}
+
+.album-card.custom-card {
+  background-color: #d6cdcd12;
+}
+
+.section-1 {
+max-width: 100%; 
+margin: 0 auto;
+overflow-x: auto; 
+white-space: nowrap; 
+}
+
+.section-1 .album-image {
+width: 420px; /* Adjust the width as needed to increase the size of album images */
+height: 300px; /* Adjust the height accordingly */
+border-radius: 5px;
+}
+
+.section-1 .album-card{
+max-width: 410px;
+margin-right: 10px; 
+}
+
+.expanded-album-container {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+gap: 1em;
+width: 100%;
+}
+
+.expanded-album-container .album-image {
+width: 200px; /* Adjust the width as needed */
+height: 200px;
+}
+
+.expanded-album-container .album-card {
+max-width: 250px; /* Adjust the width as needed */
+}
+
+.section-2 {
+margin-right:auto ;
+overflow-x:auto ;
+white-space :nowrap ;
+}
+
+
+.section-2 .album-image, .section-3 .album-image,
+.section-4 .album-image, .section-5 .album-image,
+.section-7 .album-image, .section-8 .album-image,
+.section-9 .album-image, .section-10 .album-image,
+.section-11 .album-image, .section-12 .album-image {
+width :200px ;
+height :200px ;
+border-radius :5px ;
+}
+
+
+.section-2 .album-card, .section-3 .album-card,
+.section-4 .album-card, .section-5 .album-card,
+.section-7 .album-card, .section-8 .album-card,
+.section-9 .album-card, .section-10 .album-card,
+.section-11 .album-card, .section-12 .album-card{
+max-width :200px ;
+margin-right :10px ;
+}
+
+
+.section-3{
+margin-right:auto ;
+overflow-x:auto ;
+white-space :nowrap ;
+}
+
+
+.section-6 .album-image{
+width :200px ;
+height :200px ;
+}
+
+
+.section-6 .album-card{
+width :200px ;
+height :280px ;
+}
+
+
+
+.song-title-custom {
+font-size :16px ; 
+}
+
+
+.loading-container {
+  text-align: center;
+  margin-top: 40px; 
+}
+@media only screen and (max-width: 768px) {
+  .sidebarparent {
+    width: 7%;
+    border-right: none; 
+    box-shadow: none; 
+  }
+
+  .sidebardetails {
+    /* align-items: center; Center items on smaller screens */
+    text-align: center; /* Center text on smaller screens */
+  }
+
+  .sidebarinput {
+    width: 100%; /* Make the input take full width on smaller screens */
+  }
+  
+  .sidebarinput input {
+    width: 100%; /* Make the input take full width on smaller screens */
+  }
+
+  .sidebarinput svg {
+    left: 5px; /* Adjust the left position of the search icon on smaller screens */
+  }
+
+  .sidebarlogo {
+    margin-top: 10px; /* Adjust margin on smaller screens */
+  }
+
+  .sidebarinput,
+  .sidebardetails {
+    margin-top: 10px; /* Adjust margin on smaller screens */
+  }
+
+  .song-list-overlay {
+    top: 55px; /* Adjust the top position on smaller screens to avoid overlapping with the navbar */
+  }
+}

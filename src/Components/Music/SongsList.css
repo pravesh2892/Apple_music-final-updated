@@ -1,0 +1,74 @@
+ .song-list-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9); 
+    z-index: 100; 
+    overflow: auto; 
+  }
+  
+  .song-list {
+    max-width: 200px; 
+    margin: 20px auto; 
+  }
+  
+  .song-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .song-list li {
+    padding: 8px;
+    border-bottom: 1px solid #ccc; 
+  }
+  
+ 
+
+/* Add these styles to your CSS file */
+
+/* Style for the SongList container */
+.songs-list {
+  position: absolute; 
+  top: 95px; 
+  left: 3px;
+  right: 0;
+  bottom: 50px;
+  border: 1px solid rgba(0, 0, 0, 0.15); 
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); 
+  background-color: rgba(224, 217, 217, 0.7);
+  backdrop-filter: blur(8px);
+  overflow-y: auto; 
+}
+
+/* Style for the SongList items */
+.song-list-container {
+  list-style: none; /* Remove list bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+/* Style for each song item */
+.song-item {
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15); /* Add a bottom border to separate items */
+}
+
+/* Style for the song title */
+.song-title {
+  font-weight: semi-bold; /* Make the title bold */
+  color: black;
+}
+
+/* Style for the song artist */
+.song-artist {
+  color: black; /* Set the font color to black */
+}
+
+.song-thumbnail {
+  max-width: 20px; /* Set a maximum width for the image */
+  max-height: 20px; /* Set a maximum height for the image to maintain aspect ratio */
+  margin-right: 10px;
+  font-size: 23px;
+}

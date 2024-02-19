@@ -1,0 +1,118 @@
+.gdpr-panes__icon {
+  width: 30px;
+  fill: #fa233b;
+  content: url("https://music.apple.com/static-commerce/img/privacy.cdd37a86.svg");
+  height: 30px;
+
+}
+
+.gdpr-panes__text--account {
+  margin-top: 0.75rem;
+  margin-left: 85px;
+  margin-right: 85px;
+  margin-bottom: 20px;
+}
+.gdpr-panes__text {
+  color: #86868b;
+}
+.typography-caption {
+  font-size: 12px;
+  line-height: 1.3333733333;
+  font-weight: 400;
+  letter-spacing: -.01em;
+  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.login-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 549px;
+  box-shadow: 0px 0px 10px white;
+  height: 463px;
+  margin: 0 auto;
+  font-family: Arial;
+  margin-top: 53px;
+  position: fixed;
+  z-index: 1000;
+  background: lightgray;
+  top: 45%;
+  left: 50%;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  overflow: auto;
+}
+.input-filed{
+  width: 500px;
+  height: 55px;
+  padding: 10px;
+  font-size:16px;
+  border-radius: 9px; 
+}
+
+@media screen and (max-width: 768px) {
+
+  .login-container{
+    width: 352px;
+    height: 419px;
+  }
+  .login-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 348px;
+    box-shadow: white 0px 0px 10px;
+    height: 417px;
+    margin: 53px auto 0px;
+    font-family: Arial;
+    position: fixed;
+    z-index: 1000;
+    background: lightgray;
+    top: 44%;
+    left: 50%;
+    border-radius: 10px;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+  }
+ .login-div .input-filed{
+  width: 258px;
+  height: 44px;
+  padding: 7px;
+  font-size: 14px;
+  border-radius: 9px;
+ } 
+
+ .login-container h1{
+  margin-bottom: 4px;
+  font-size: 16px;
+
+ }
+
+ .login-container h2{
+  margin-bottom: 4px;
+  font-size: 16px;
+
+ }
+ .input-filed{
+  width: 295px;
+  margin-bottom: 10px;
+  height: 41px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 9px;
+ }
+}
+
+
+@media screen and (max-width: 768px) {
+  .login-div {
+    width: 90%;
+    margin: 53px auto 0px;
+  }
+
+  .login-div .input-filed {
+    width: 100%;
+  }
+}

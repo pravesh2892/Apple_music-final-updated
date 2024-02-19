@@ -1,0 +1,20 @@
+/* .song-list-item {
+  transition: background-color 0.3s, transform 0.3s; 
+}
+/*  */
+/* song-list-item:hover {
+  background-color: rgb(35, 37, 37); 
+  transform: translateX(10px); 
+} */
+
+.table {
+  border-collapse: collapse;
+}
+
+.table .table-row {
+  border-bottom: 1px solid transparent; /* Remove the white line between rows */
+}
+
+.table .table-cell {
+  border: none; /* Remove the cell borders */
+}
